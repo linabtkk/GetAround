@@ -59,227 +59,229 @@ button {
   max-width: 85%;
   margin: auto;
 }
+
 .logo img {
   height: 50px;
 }
 
 /*--------header---------*/
 header {
-    height: 10vh;
-    line-height: 10vh;
-    padding: 0 20px;
-  }
-  header img {
-    margin: 20px 0;
-  }
-  
+  height: 10vh;
+  line-height: 10vh;
+  padding: 0 20px;
+}
+
+header img {
+  margin: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: #000;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #7fc142;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header .navlinks span {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
   header ul {
-    display: inline-block;
-  }
-  
-  header ul li {
-    display: inline-block;
-    text-transform: uppercase;
-  }
-  
-  header ul li a {
-    color: #000;
-    margin: 0 10px;
-    transition: 0.5s;
-  }
-  
-  header ul li a:hover {
-    color: #7fc142;
-  }
-  
-  header i {
-    margin: 0 20px;
-  }
-  
-  header button {
-    padding: 13px 40px;
-  }
-  
-  header .navlinks span {
-    display: none;
-  }
-  
-  @media only screen and (max-width:768px) {
-    header ul {
-      position: absolute;
-      top: 100px;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: #009f7f;
-      overflow: hidden;
-      transition: max-height 0.5s;
-      text-align: center;
-      z-index: 9;
-    }
-  
-    header ul li {
-      display: block;
-    }
-  
-    header ul li a {
-      color: white;
-    }
-  
-    header i {
-      color: white;
-    }
-  
-    header .navlinks span {
-      color: black;
-      display: block;
-      cursor: pointer;
-      line-height: 10vh;
-      font-size: 25px;
-    }
-  }
-  
-  /*--------header---------*/
-  /*--------home---------*/
-  .home {
-    height: 100vh;
-    color: #fff;
-  }
-  
-  .home img {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .home .text {
     position: absolute;
-    top: 35%;
-    left: 5%;
-  }
-  
-  .home .text h1 {
-    font-size: 80px;
-    font-family: serif;
-    font-weight: 400;
-  }
-  
-  .home p {
-    margin: 20px 0;
-  }
-  
-  .home button {
-    margin-right: 20px;
-  }
-  
-  .owl-nav .owl-prev,
-  .owl-nav .owl-next {
-    position: absolute;
-    top: 40%;
-    height: 50px;
-    width: 50px;
-    background: rgba(0, 0, 0, 0.5) !important;
-    color: #fff;
-  }
-  
-  .owl-nav .owl-prev {
+    top: 100px;
     left: 0;
-  }
-  
-  .owl-nav .owl-next {
-    right: 0;
-  }
-  
-  /*--------home---------*/
-  /*--------book---------*/
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-  }
-  
-  input {
-    outline: none;
-    border: none;
     width: 100%;
+    height: 100vh;
+    background: #009f7f;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
   }
-  
-  .book {
-    padding: 40px 0;
-    background: #282834;
-    color: #fff;
+
+  header ul li {
+    display: block;
   }
-  
-  h1 {
-    font-family: serif;
+
+  header ul li a {
+    color: white;
   }
-  
-  .book h1 {
-    font-size: 28px;
+
+  header i {
+    color: white;
   }
-  
-  .book h1 span {
-    color: #7fc142;
+
+  header .navlinks span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
   }
-  
-  .book input {
-    padding: 20px;
-  }
-  
-  .book input:nth-last-child(1) {
-    background: #7fc142;
-    color: #fff;
-  }
-  
-  /*--------book---------*/
-  /*--------about---------*/
-  .left, .right {
-    width: 50%;
-    padding: 30px;
-  }
-  
-  .top {
-    margin-top: 80px;
-  }
-  
-  .mtop {
-    margin-top: 40px;
-  }
-  
-  .heading h1 {
-    font-size: 100px;
-    font-weight: 500;
-    opacity: 0.1;
-    font-family: serif;
-    position: absolute;
-    top: -30px;
-  }
-  
-  .heading h2 {
-    margin: 30px 0;
-    font-size: 45px;
-    font-family: serif;
-    font-weight: 400;
-  }
-  
-  .about .heading h1 {
-    top: 55px;
-  }
-  
-  .about {
-    position: relative;
-  }
-  
-  .about .left {
-    margin-top: 30px;
-  }
-  
-  .about p {
-    font-size: 15px;
-  }
-  
-  .about button {
-    margin: 30px 0;
-  }
+}
+
+/*--------header---------*/
+/*--------home---------*/
+.home {
+  height: 100vh;
+  color: #fff;
+}
+
+.home img {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.home .text h1 {
+  font-size: 80px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.home p {
+  margin: 20px 0;
+}
+
+.home button {
+  margin-right: 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+}
+
+.owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  right: 0;
+}
+
+/*--------home---------*/
+/*--------book---------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.book {
+  padding: 40px 0;
+  background: #282834;
+  color: #fff;
+}
+
+h1 {
+  font-family: serif;
+}
+
+.book h1 {
+  font-size: 28px;
+}
+
+.book h1 span {
+  color: #7fc142;
+}
+
+.book input {
+  padding: 20px;
+}
+
+.book input:nth-last-child(1) {
+  background: #7fc142;
+  color: #fff;
+}
+
+/*--------book---------*/
+/*--------about---------*/
+.left, .right {
+  width: 50%;
+  padding: 30px;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.heading h1 {
+  font-size: 100px;
+  font-weight: 500;
+  opacity: 0.1;
+  font-family: serif;
+  position: absolute;
+  top: -30px;
+}
+
+.heading h2 {
+  margin: 30px 0;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.about .heading h1 {
+  top: 55px;
+}
+
+.about {
+  position: relative;
+}
+
+.about .left {
+  margin-top: 30px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+.about button {
+  margin: 30px 0;
+}
 
 /*--------about---------*/
 /*--------counter---------*/
@@ -480,7 +482,7 @@ header {
 .services h3 {
   font-size: 20px;
   font-weight: 400;
-  margin-top: 20p;
+  margin-top: 20px;
   transition: 0.5s;
 }
 
@@ -713,15 +715,17 @@ footer label {
 }
 
 /*--------footer---------*/
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .home {
-    color: #fff;
     height: 50vh;
   }
 
   .home img {
-    width: 100%;
     height: 50vh;
+  }
+
+  .home .text h1 {
+    font-size: 40px;
   }
 
   .left, .right {
@@ -738,7 +742,7 @@ footer label {
   }
 
   .book .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .counter .grid {
@@ -822,119 +826,116 @@ footer label {
   footer .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .grid_hotel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content_hotel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_hotel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description_hotel,
+  .activite_user {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .avis {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoclient {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /** HOTEL  **/
-h1.title_hotel{
-  position: relative;
-  /* left: 257px; */
-  margin-left: 257px;
+h1.title_hotel {
+  margin-left: 0;
+  text-align: center;
   margin-bottom: 15px;
   margin-top: 5px;
 }
 
-.content_hotel{
-    display: flex;
-    gap: 7px;
-    justify-content: center;
-    
+.content_hotel {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
 }
 
-.grid_hotel{
-    /* display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    border-radius: 15px;
-    gap: 20px; */
-    margin-left: 15px;
-    display: grid;
-    grid-template-columns: repeat(2, 0.2fr);
-    grid-gap: 7px;
-    margin-bottom: 10px;
+.grid_hotel {
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 0.2fr);
+  grid-gap: 7px;
+  margin-bottom: 10px;
 }
 
-.box_hotel img{
-    width: 260px;
-    height: 220px;
-    border-radius: 15px;
+.box_hotel img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
-/* .box_hotel img hover::after{
-    background-color: hsla(0, 0%, 100%, 0.115)
-} */
-
-.right_hotel img{
-    width: 460px;
-    height: 455px;
-    border-radius: 15px;
+.right_hotel img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
-.description_hotel{
-    /* text-align: start; */
-    /* margin: 0 auto; */
-    
-    margin-left: 257px;
-
-}
-
-/* .activite_liste li{
-    list-style-type: "- ";
-} */
-
-.user_avis img{
-    width: 40px;
-}
-
-.avis p{
-    font-size:15px ;
-}
-
-.avis{
-    display: flex;
-    /*flex-wrap: wrap; */
-    max-width: 1400px; 
-    margin: 50px;
-    padding: 5px;
-    /* grid-template-columns: repeat(2, 60px); */
-
-}
-
-.infoclient{
-    display: flex;
-    gap: 5px;
-}
-
-.activite_user{
-    margin-left: 257px;
-}
-
-/*Business paln */
-
-/* .container h2{
-    text-align: center;
-    font-weight: bold;
-
-} */
-
-.imgplan {
- display: flex;
- justify-content: center;
- width: 100%;
-}
-
-.img-text {
-    text-align: center;
-}
-/* 
-ol businessmodel{
-    
-} */
-
-.containercop{
+.description_hotel {
   text-align: center;
 }
 
-.logo img{
+.user_avis img {
+  width: 40px;
+}
+
+.avis p {
+  font-size: 15px;
+}
+
+.avis {
+  display: flex;
+  max-width: 1400px;
+  margin: 50px;
+  padding: 5px;
+}
+
+.infoclient {
+  display: flex;
+  gap: 5px;
+}
+
+.activite_user {
+  text-align: center;
+}
+
+/* Business plan */
+.imgplan {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-text {
+  text-align: center;
+}
+
+.containercop {
+  text-align: center;
+}
+
+.logo img {
   margin: auto;
   padding-top: 15px;
 }
